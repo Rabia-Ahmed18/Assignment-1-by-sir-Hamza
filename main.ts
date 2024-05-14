@@ -1,14 +1,20 @@
-/* -- Create a variable named miles and assign a numeric value representing distance in miles.
-• Calculate the equivalent distance in kilometers using the conversion factor (1 mile = 
-    1.60934 kilometers). You can achieve this by multiplying miles by 1.60934.
-    • Store the converted distance in kilometers in a variable named kilometers.
-    • Use console.log to print a message in the following format:
-    */
+/*
+Set up two different variables with different values.
+• Call a function with these variables as arguments and output the result using console.log.
+• Create a second call to the function with two more numbers as arguments.*/
 
-    let miles :number =130;
-    
-    const  conversionFactor = 1.60934;
+function addNumbers(num1: number, num2: number): number {
+  return num1 + num2;
+}
 
-    let kilometers =miles * conversionFactor;
+let firstNumber = 5;
+let secondNumber = 3;
 
-    console.log(`The distance of 130 kilometers is ${kilometers}`);
+console.log("The sum of the first two numbers is:", addNumbers(firstNumber, secondNumber));
+
+
+let thirdNumber = 7;
+let fourthNumber = 2;
+
+// Create a second call to the function with the new numbers as arguments
+console.log("The sum of the second two numbers is:", addNumbers(thirdNumber, fourthNumber));
